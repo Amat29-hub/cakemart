@@ -23,7 +23,7 @@
                           <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Shop Now</a>
                         </div>
                         <div class="img-wrapper col-md-5">
-                          <img src="{{ asset('assetsfrontend/images/product-thumb-1.png') }}" class="img-fluid">
+                          <img src="{{ asset('assetsfrontend/product-thumb-2.png') }}" class="img-fluid">
                         </div>
                       </div>
                     </div>
