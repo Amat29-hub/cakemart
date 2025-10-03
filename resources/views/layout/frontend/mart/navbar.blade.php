@@ -44,9 +44,11 @@
                 </ul>
 
                 <!-- Cart -->
-                <div class="text-end">
-                <span class="fs-6 text-muted">Your Cart</span>
-                <div class="fw-bold">$143.000</div>
+                <div class="cart text-end d-none d-lg-block dropdown">
+                    <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                        <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
+                        <span class="cart-total fs-5 fw-bold">$1290.00</span>
+                    </button>
                 </div>
             </div>
           </div>
