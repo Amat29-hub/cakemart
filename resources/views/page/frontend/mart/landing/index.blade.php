@@ -15,17 +15,16 @@
                   <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                      <div class="row banner-content p-5">
-                        <div class="content-wrapper col-md-7">
-                          <div class="categories my-3">100% natural</div>
-                          <h3 class="display-4">Fresh Smoothie & Summer Juice</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
-                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Shop Now</a>
+                        <div class="row banner-content p-5">
+                            <div class="content-wrapper col-md-7">
+                            <div class="categories my-3">Best Selling</div>
+                            <h3 class="display-4">Wedding Cake & Birthday Cake</h3>
+                            <p>Dari ulang tahun hingga pernikahan, CakeMart siap maniskan setiap momen indah dengan cake istimewa</p>
+                            </div>
+                            <div class="img-wrapper col-md-5">
+                            <img src="{{ asset('assetsfrontend/images/pinkcake-no-bg.png') }}" class="img-fluid cake-img">
+                            </div>
                         </div>
-                        <div class="img-wrapper col-md-5">
-                          <img src="{{ asset('assetsfrontend/product-thumb-2.png') }}" class="img-fluid">
-                        </div>
-                      </div>
                     </div>
 
                     <div class="swiper-slide">
@@ -185,9 +184,9 @@
             <div class="row">
               <div class="col-md-6 p-5">
                 <div class="section-header">
-                  <h2 class="section-title display-4">Get <span class="text-primary">25% Discount</span> on your first purchase</h2>
+                  <h2 class="section-title display-4">Get <span class="text-primary">50% Off</span> on your first 3 products</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel egestas.</p>
+                <p>Dapatkan potongan 50% untuk 3 produk pertama Anda dan mulai pengalaman manis bersama CakeMart</p>
               </div>
             </div>
 
@@ -206,7 +205,7 @@
 
             <div class="bootstrap-tabs product-tabs">
               <div class="tabs-header d-flex justify-content-between border-bottom my-5">
-                <h3>Trending Products</h3>
+                <h3>Product</h3>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a href="#" class="nav-link text-uppercase fs-6 active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all">All</a>
@@ -920,18 +919,19 @@
       <div class="container-fluid">
         <div class="row">
           <div class="section-header d-flex align-items-center justify-content-between my-5">
-            <h2 class="section-title">Our Recent Blog</h2>
+            <h2 class="section-title">My Blog</h2>
             <div class="btn-wrap align-right">
               <a href="#" class="d-flex align-items-center nav-link">Read All Articles <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
             </div>
           </div>
         </div>
         <div class="row">
+
           <div class="col-md-4">
             <article class="post-item card border-0 shadow-sm p-3">
               <div class="image-holder zoom-effect">
                 <a href="#">
-                  <img src="{{ asset('assetsfrontend/images/post-thumb-1.jpg') }}" alt="post" class="card-img-top">
+                  <img src="{{ asset('assetsfrontend/images/blog-1.jpg') }}" alt="post" class="card-img-top">
                 </a>
               </div>
               <div class="card-body">
@@ -941,18 +941,19 @@
                 </div>
                 <div class="post-header">
                   <h3 class="post-title">
-                    <a href="#" class="text-decoration-none">Top 10 casual look ideas to dress up your kids</a>
+                    <a href="#" class="text-decoration-none">Tips Memilih Wedding Cake yang Sempurna untuk Hari Bahagiamu</a>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <p>Pernikahan adalah momen spesial yang hanya terjadi sekali, dan wedding cake menjadi salah satu elemen penting yang tak boleh dilewatkan...</p>
                 </div>
               </div>
             </article>
           </div>
+
           <div class="col-md-4">
             <article class="post-item card border-0 shadow-sm p-3">
               <div class="image-holder zoom-effect">
                 <a href="#">
-                  <img src="{{ asset('assetsfrontend/images/post-thumb-2.jpg') }}" alt="post" class="card-img-top">
+                  <img src="{{ asset('assetsfrontend/images/blog-2.jpg') }}" alt="post" class="card-img-top">
                 </a>
               </div>
               <div class="card-body">
@@ -962,9 +963,9 @@
                 </div>
                 <div class="post-header">
                   <h3 class="post-title">
-                    <a href="#" class="text-decoration-none">Latest trends of wearing street wears supremely</a>
+                    <a href="#" class="text-decoration-none">Tren Kue Ulang Tahun 2025: Dari Minimalis hingga Fantasiy</a>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <p>Ulang tahun selalu menjadi momen spesial, dan kue ulang tahun adalah pusat perhatian di setiap perayaan. Tahun 2025 menghadirkan tren...</p>
                 </div>
               </div>
             </article>
@@ -973,7 +974,7 @@
             <article class="post-item card border-0 shadow-sm p-3">
               <div class="image-holder zoom-effect">
                 <a href="#">
-                  <img src="{{ asset('assetsfrontend/images/post-thumb-3.jpg') }}" alt="post" class="card-img-top">
+                  <img src="{{ asset('assetsfrontend/images/blog-3.jpg') }}" alt="post" class="card-img-top">
                 </a>
               </div>
               <div class="card-body">
@@ -983,9 +984,9 @@
                 </div>
                 <div class="post-header">
                   <h3 class="post-title">
-                    <a href="#" class="text-decoration-none">10 Different Types of comfortable clothes ideas for women</a>
+                    <a href="#" class="text-decoration-none">Cara Menyimpan dan Menghidangkan Kue Agar Tetap Segar dan Cantik</a>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <p>Kue yang cantik dan lezat akan menjadi pusat perhatian di setiap acara. Agar kualitasnya tetap...</p>
                 </div>
               </div>
             </article>
@@ -998,24 +999,10 @@
     <section class="py-5">
       <div class="container-fluid">
         <h2 class="my-5">People are also looking for</h2>
-        <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Angies Boomchickapop Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Angies Boomchickapop Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Wedding Cake</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Cupcake</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Birthday Cake</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Traditional Cake</a>
       </div>
     </section>
 
