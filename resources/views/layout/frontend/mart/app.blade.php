@@ -23,20 +23,20 @@
   </head>
   <body>
 
-    @include('layout.frontend.martsvg')
+    @include('layout.frontend.mart.svg')
 
     <div class="preloader-wrapper">
       <div class="preloader">
       </div>
     </div>
 
-    @include('layout.frontend.martcanvascart')
+    @include('layout.frontend.mart.canvascart')
 
-    @include('layout.frontend.martnavbar')
+    @include('layout.frontend.mart.navbar')
 
     @yield('content')
 
-    @include('layout.frontend.martfooter')
+    @include('layout.frontend.mart.footer')
 
     <script src="{{ asset('assetsfrontend/js/jquery-1.11.0.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
