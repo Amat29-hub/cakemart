@@ -1,17 +1,17 @@
-@extends('layouts.backend.app')
+@extends('layout.backend.app')
 
 @section('content')
     <div class="container-scroller">
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
-          <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="index.html"><img src="{{ asset('assetsbackend/images/logo.svg') }}" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="{{ asset('assetsbackend/images/logo-mini.svg') }}" alt="logo" /></a>
         </div>
         <ul class="nav">
           <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
               <div class="nav-profile-image">
-                <img src="assets/images/faces/face1.jpg" alt="profile" />
+                <img src="{{ asset('assetsbackend/images/faces/face1.jpg') }}" alt="profile" />
                 <span class="login-status online"></span>
                 <!--change to offline or busy as needed-->
               </div>
@@ -115,7 +115,7 @@
         </div>
         <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
           <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
-            <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+            <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="{{ asset('assetsbackend/images/logo-mini.svg') }}" alt="logo" /></a>
             <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
               <i class="mdi mdi-menu"></i>
             </button>
@@ -129,7 +129,7 @@
                   <h6 class="p-3 mb-0">Notifications</h6>
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
-                      <img src="assets/images/faces/face4.jpg" alt="" class="profile-pic" />
+                      <img src="{{ asset('assetsbackend/images/faces/face4.jpg') }}" alt="" class="profile-pic" />
                     </div>
                     <div class="preview-item-content">
                       <p class="mb-0"> Dany Miles <span class="text-small text-muted">commented on your photo</span>
@@ -138,7 +138,7 @@
                   </a>
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
-                      <img src="assets/images/faces/face3.jpg" alt="" class="profile-pic" />
+                      <img src="{{ asset('assetsbackend/images/faces/face3.jpg') }}" alt="" class="profile-pic" />
                     </div>
                     <div class="preview-item-content">
                       <p class="mb-0"> James <span class="text-small text-muted">posted a photo on your wall</span>
@@ -147,7 +147,7 @@
                   </a>
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
-                      <img src="assets/images/faces/face2.jpg" alt="" class="profile-pic" />
+                      <img src="{{ asset('assetsbackend/images/faces/face2.jpg') }}" alt="" class="profile-pic" />
                     </div>
                     <div class="preview-item-content">
                       <p class="mb-0"> Alex <span class="text-small text-muted">just mentioned you in his post</span>
@@ -215,7 +215,7 @@
               </li>
               <li class="nav-item nav-profile dropdown border-0">
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown">
-                  <img class="nav-profile-img mr-2" alt="" src="assets/images/faces/face1.jpg" />
+                  <img class="nav-profile-img mr-2" alt="" src="{{ asset('assetsbackend/images/faces/face1.jpg') }}" />
                   <span class="profile-name">Henry Klein</span>
                 </a>
                 <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
@@ -409,7 +409,7 @@
                           <tr>
                             <td>
                               <div class="d-flex align-items-center">
-                                <img src="assets/images/faces/face1.jpg" alt="image" />
+                                <img src="{{ asset('assetsbackend/images/faces/face1.jpg" alt="image"') }} />
                                 <div class="table-user-name ml-3">
                                   <p class="mb-0 font-weight-medium"> Cecelia Cooper </p>
                                   <small> Payment on hold</small>
@@ -425,7 +425,7 @@
                           <tr>
                             <td>
                               <div class="d-flex align-items-center">
-                                <img src="assets/images/faces/face10.jpg" alt="image" />
+                                <img src="{{ asset('assetsbackend/images/faces/face10.jpg') }}" alt="image" />
                                 <div class="table-user-name ml-3">
                                   <p class="mb-0 font-weight-medium"> Victor Watkins </p>
                                   <small>Email verified</small>
@@ -441,7 +441,7 @@
                           <tr>
                             <td>
                               <div class="d-flex align-items-center">
-                                <img src="assets/images/faces/face11.jpg" alt="image" />
+                                <img src="{{ asset('assetsbackend/images/faces/face11.jpg') }}" alt="image" />
                                 <div class="table-user-name ml-3">
                                   <p class="mb-0 font-weight-medium"> Ada Burgess </p>
                                   <small>Email verified</small>
@@ -457,7 +457,7 @@
                           <tr>
                             <td>
                               <div class="d-flex align-items-center">
-                                <img src="assets/images/faces/face13.jpg" alt="image" />
+                                <img src="{{ asset('assetsbackend/images/faces/face13.jpg') }}" alt="image" />
                                 <div class="table-user-name ml-3">
                                   <p class="mb-0 font-weight-medium"> Dollie Lynch </p>
                                   <small>Email verified</small>
@@ -473,7 +473,7 @@
                           <tr>
                             <td>
                               <div class="d-flex align-items-center">
-                                <img src="assets/images/faces/face16.jpg" alt="image" />
+                                <img src="{{ asset('assetsbackend/images/faces/face16.jpg') }}" alt="image" />
                                 <div class="table-user-name ml-3">
                                   <p class="mb-0 font-weight-medium"> Harry Holloway </p>
                                   <small>Payment on process</small>
@@ -501,7 +501,7 @@
                     <div class="card-title font-weight-medium"> Business Survey </div>
                     <p class="text-muted"> Lorem ipsum dolor sitadipiscing elit, sed amet do eiusmod tempor we find a new solution </p>
                     <div class="d-flex flex-wrap border-bottom py-2 border-top justify-content-between">
-                      <img class="survey-img mb-lg-3" src="assets/images/dashboard/img_3.jpg" alt="" />
+                      <img class="survey-img mb-lg-3" src="{{ asset('assetsbackend/images/dashboard/img_3.jpg') }}" alt="" />
                       <div class="pt-2">
                         <h5 class="mb-0">Villa called Archagel</h5>
                         <p class="mb-0 text-muted">St, San Diego, CA</p>
@@ -509,7 +509,7 @@
                       </div>
                     </div>
                     <div class="d-flex flex-wrap border-bottom py-2 justify-content-between">
-                      <img class="survey-img mb-lg-3" src="assets/images/dashboard/img_1.jpg" alt="" />
+                      <img class="survey-img mb-lg-3" src="{{ asset('assetsbackend/images/dashboard/img_1.jpg') }}" alt="" />
                       <div class="pt-2">
                         <h5 class="mb-0">Luxury villa in Hermo</h5>
                         <p class="mb-0 text-muted">Glendale, CA</p>
@@ -517,7 +517,7 @@
                       </div>
                     </div>
                     <div class="d-flex flex-wrap border-bottom py-2 justify-content-between">
-                      <img class="survey-img mb-lg-3" src="assets/images/dashboard/img_2.jpg" alt="" />
+                      <img class="survey-img mb-lg-3" src="{{ asset('assetsbackend/images/dashboard/img_2.jpg') }}" alt="" />
                       <div class="pt-2">
                         <h5 class="mb-0">House on the Clarita</h5>
                         <p class="mb-0 text-muted">Business Survey</p>
@@ -583,7 +583,7 @@
                       <div class="col-12 col-sm-7">
                         <div class="row">
                           <div class="col-4 col-md-4">
-                            <img class="customer-img" src="assets/images/faces/face22.jpg" alt="" />
+                            <img class="customer-img" src="{{ asset('assetsbackend/images/faces/face22.jpg') }}" alt="" />
                           </div>
                           <div class="col-8 col-md-8 p-sm-0">
                             <h6 class="mb-0">Cecelia Cooper</h6>
@@ -599,7 +599,7 @@
                       <div class="col-sm-7">
                         <div class="row">
                           <div class="col-4 col-sm-4">
-                            <img class="customer-img" src="assets/images/faces/face25.jpg" alt="" />
+                            <img class="customer-img" src="{{ asset('assetsbackend/images/faces/face25.jpg') }}" alt="" />
                           </div>
                           <div class="col-8 col-sm-8 p-sm-0">
                             <h6 class="mb-0">Victor Watkins</h6>
@@ -615,7 +615,7 @@
                       <div class="col-sm-7">
                         <div class="row">
                           <div class="col-4 col-sm-4">
-                            <img class="customer-img" src="assets/images/faces/face15.jpg" alt="" />
+                            <img class="customer-img" src="{{ asset('assetsbackend/images/faces/face15.jpg') }}" alt="" />
                           </div>
                           <div class="col-8 col-sm-8 p-sm-0">
                             <h6 class="mb-0">Ada Burgess</h6>
@@ -631,7 +631,7 @@
                       <div class="col-sm-7">
                         <div class="row">
                           <div class="col-4 col-sm-4">
-                            <img class="customer-img" src="assets/images/faces/face5.jpg" alt="" />
+                            <img class="customer-img" src="{{ asset('assetsbackend/images/faces/face5.jpg') }}" alt="" />
                           </div>
                           <div class="col-8 col-sm-8 p-sm-0">
                             <h6 class="mb-0">Dollie Lynch</h6>
@@ -647,7 +647,7 @@
                       <div class="col-sm-7">
                         <div class="row">
                           <div class="col-4 col-sm-4">
-                            <img class="customer-img" src="assets/images/faces/face2.jpg" alt="" />
+                            <img class="customer-img" src="{{ asset('assetsbackend/images/faces/face2.jpg') }}" alt="" />
                           </div>
                           <div class="col-8 col-sm-8 p-sm-0">
                             <h6 class="mb-0">Harry Holloway</h6>
@@ -671,7 +671,7 @@
                     <div class="row border-bottom pb-3 pt-4 align-items-center mx-0">
                       <div class="col-sm-9 pl-0">
                         <div class="d-flex">
-                          <img src="assets/images/dashboard/img_4.jpg" alt="" />
+                          <img src="{{ asset('assetsbackend/images/dashboard/img_4.jpg') }}" alt="" />
                           <div class="pl-2">
                             <h6 class="m-0">Red Chair</h6>
                             <p class="m-0">Home Decoration</p>
@@ -685,7 +685,7 @@
                     <div class="row py-3 align-items-center mx-0">
                       <div class="col-sm-9 pl-0">
                         <div class="d-flex">
-                          <img src="assets/images/dashboard/img_5.jpg" alt="" />
+                          <img src="{{ asset('assetsbackend/images/dashboard/img_5.jpg') }}" alt="" />
                           <div class="pl-2">
                             <h6 class="m-0">Gray Sofa</h6>
                             <p class="m-0">Home Decoration</p>
@@ -797,9 +797,9 @@
                           <span>2h ago</span>
                           <span class="d-inline-block">
                             <span class="d-flex d-inline-block">
-                              <img class="ml-1" src="assets/images/faces/face1.jpg" alt="" />
-                              <img class="ml-1" src="assets/images/faces/face10.jpg" alt="" />
-                              <img class="ml-1" src="assets/images/faces/face14.jpg" alt="" />
+                              <img class="ml-1" src="{{ asset('assetsbackend/images/faces/face1.jpg') }}" alt="" />
+                              <img class="ml-1" src="{{ asset('assetsbackend/images/faces/face10.jpg') }}" alt="" />
+                              <img class="ml-1" src="{{ asset('assetsbackend/images/faces/face14.jpg') }}" alt="" />
                             </span>
                           </span>
                         </p>
@@ -829,7 +829,7 @@
                         <div class="col-7 col-sm-8">
                           <div class="row align-items-center">
                             <div class="col-sm-4">
-                              <img src="assets/images/faces/face2.jpg" alt="" />
+                              <img src="{{ asset('assetsbackend/images/faces/face2.jpg') }}" alt="" />
                             </div>
                             <div class="col-sm-8 pr-0 pl-sm-0">
                               <span>06 Jan 2019</span>
@@ -861,7 +861,7 @@
                         <div class="col-7 col-sm-8">
                           <div class="row align-items-center">
                             <div class="col-sm-4">
-                              <img src="assets/images/faces/face3.jpg" alt="" />
+                              <img src="{{ asset('assetsbackend/images/faces/face3.jpg') }}" alt="" />
                             </div>
                             <div class="col-sm-8 pr-0 pl-sm-0">
                               <span>18 Mar 2019</span>
@@ -893,7 +893,7 @@
                         <div class="col-7 col-sm-8">
                           <div class="row align-items-center">
                             <div class="col-sm-4">
-                              <img src="assets/images/faces/face11.jpg" alt="" />
+                              <img src="{{ asset('assetsbackend/images/faces/face11.jpg') }}" alt="" />
                             </div>
                             <div class="col-sm-8 pr-0 pl-sm-0">
                               <span>10 Apr 2019</span>
@@ -925,7 +925,7 @@
                         <div class="col-7 col-sm-8">
                           <div class="row align-items-center">
                             <div class="col-sm-4">
-                              <img src="assets/images/faces/face3.jpg" alt="" />
+                              <img src="{{ asset('assetsbackend/images/faces/face3.jpg') }}" alt="" />
                             </div>
                             <div class="col-sm-8 pr-0 pl-sm-0">
                               <span>18 Mar 2019</span>
@@ -973,7 +973,7 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between pb-3 border-bottom">
                           <div>
-                            <img class="mr-2" src="assets/images/browser-logo/opera-logo.png" alt="" />
+                            <img class="mr-2" src="{{ asset('assetsbackend/images/browser-logo/opera-logo.png') }}" alt="" />
                             <span class="p">opera mini</span>
                           </div>
                           <p class="mb-0">23%</p>
@@ -984,7 +984,7 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between pb-3 border-bottom">
                           <div>
-                            <img class="mr-2" src="assets/images/browser-logo/safari-logo.png" alt="" />
+                            <img class="mr-2" src="{{ asset('assetsbackend/images/browser-logo/safari-logo.png') }}" alt="" />
                             <span class="p">Safari</span>
                           </div>
                           <p class="mb-0">07%</p>
@@ -995,7 +995,7 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between pb-3 border-bottom">
                           <div>
-                            <img class="mr-2" src="assets/images/browser-logo/chrome-logo.png" alt="" />
+                            <img class="mr-2" src="{{ asset('assetsbackend/images/browser-logo/chrome-logo.png') }}" alt="" />
                             <span class="p">Chrome</span>
                           </div>
                           <p class="mb-0">33%</p>
@@ -1006,7 +1006,7 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between pb-3 border-bottom">
                           <div>
-                            <img class="mr-2" src="assets/images/browser-logo/firefox-logo.png" alt="" />
+                            <img class="mr-2" src="{{ asset('assetsbackend/images/browser-logo/firefox-logo.png') }}" alt="" />
                             <span class="p">Firefox</span>
                           </div>
                           <p class="mb-0">17%</p>
@@ -1017,7 +1017,7 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
-                            <img class="mr-2" src="assets/images/browser-logo/explorer-logo.png" alt="" />
+                            <img class="mr-2" src="{{ asset('assetsbackend/images/browser-logo/explorer-logo.png') }}" alt="" />
                             <span class="p">Explorer</span>
                           </div>
                           <p class="mb-0">05%</p>
@@ -1043,24 +1043,24 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="{{ asset('assetsbackend/vendors/js/vendor.bundle.base.js') }}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="assets/vendors/flot/jquery.flot.js"></script>
-    <script src="assets/vendors/flot/jquery.flot.resize.js"></script>
-    <script src="assets/vendors/flot/jquery.flot.categories.js"></script>
-    <script src="assets/vendors/flot/jquery.flot.fillbetween.js"></script>
-    <script src="assets/vendors/flot/jquery.flot.stack.js"></script>
-    <script src="assets/vendors/flot/jquery.flot.pie.js"></script>
+    <script src="{{ asset('assetsbackend/vendors/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ asset('assetsbackend/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js') }}"></script>
+    <script src="{{ asset('assetsbackend/vendors/flot/jquery.flot.js') }}"></script>
+    <script src="{{ asset('assetsbackend/vendors/flot/jquery.flot.resize.js') }}"></script>
+    <script src="{{ asset('assetsbackend/vendors/flot/jquery.flot.categories.js') }}"></script>
+    <script src="{{ asset('assetsbackend/vendors/flot/jquery.flot.fillbetween.js') }}"></script>
+    <script src="{{ asset('assetsbackend/vendors/flot/jquery.flot.stack.js') }}"></script>
+    <script src="{{ asset('assetsbackend/vendors/flot/jquery.flot.pie.js') }}"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
+    <script src="{{ asset('assetsbackend/js/off-canvas.js') }}"></script>
+    <script src="{{ asset('assetsbackend/js/hoverable-collapse.js') }}"></script>
+    <script src="{{ asset('assetsbackend/js/misc.js') }}"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
+    <script src="{{ asset('assetsbackend/js/dashboard.js') }}"></script>
     <!-- End custom js for this page -->
 @endsection
