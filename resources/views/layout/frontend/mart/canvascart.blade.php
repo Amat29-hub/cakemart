@@ -36,7 +36,7 @@
             </li>
           </ul>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+            <a class="w-100 btn btn-primary btn-lg" href="/payment">Continue to checkout</a>
         </div>
       </div>
     </div>

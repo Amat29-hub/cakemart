@@ -22,3 +22,7 @@ Route::get('/', [CompanyLandingFrontendController::class, 'index']);
 Route::get('/about', [AboutFrontendController::class, 'index']);
 //Mart
 Route::get('/mart', [MartLandingFrontendController::class, 'index']);
+
+Route::get('/payment', function () {
+    return view('page.frontend.mart.payment.index');
+});
