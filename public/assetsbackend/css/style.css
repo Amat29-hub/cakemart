@@ -4852,7 +4852,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  
+
   .btn-group-vertical > .btn,
   .fc .btn-group-vertical > button,
   .ajax-upload-dragdrop .btn-group-vertical > .ajax-file-upload,
@@ -15478,5 +15478,67 @@ dl {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
+
+/* Default */
+.sidebar {
+    width: 250px;
+    transition: all 0.3s ease;
+}
+.main-panel {
+    margin-left: 250px;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar collapsed (desktop) */
+.sidebar.collapsed {
+    width: 70px;
+}
+.main-panel.expanded {
+    margin-left: 70px;
+}
+
+/* Sidebar hidden (mobile) */
+@media (max-width: 991px) {
+    .sidebar {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        height: 100%;
+        z-index: 999;
+    }
+    .sidebar.show {
+        left: 0;
+    }
+    .main-panel {
+        margin-left: 0 !important;
+    }
+}
+
+.sidebar .nav .nav-item.active > .nav-link {
+  background: linear-gradient(45deg, #4B49AC, #4B49AC);
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav .nav-item.active > .nav-link i {
+  color: #fff;
+}
+
+.sidebar .nav .nav-item .nav-link:hover {
+  background: rgba(75, 73, 172, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* kasih jarak antara logo dan menu */
+.sidebar .sidebar-brand-wrapper {
+  padding: 0px 0px;     /* biar logo agak lega */
+  margin-bottom: 20px;    /* jarak ke menu Dashboard */
+}
+
+.sidebar .sidebar-brand-wrapper img {
+  max-height: 80px; /* biar logo gak terlalu besar */
+}
 
 /*# sourceMappingURL=style.css.map */
