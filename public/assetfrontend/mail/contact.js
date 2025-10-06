@@ -1,48 +1,60 @@
 $(function () {
-
+    // Validasi Bootstrap
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
+            // Bisa tambahkan pesan error di sini kalau mau
         },
         submitSuccess: function ($form, event) {
             event.preventDefault();
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var subject = $("input#subject").val();
-            var message = $("textarea#message").val();
 
-            $this = $("#sendMessageButton");
+            // Ambil data dari form
+            var first_name = $("input#first_name").val();
+            var last_name = $("input#last_name").val();
+            var subject = $("input#subject").val();
+            var description = $("textarea#description").val();
+
+            var $this = $("#sendMessageButton");
             $this.prop("disabled", true);
 
+            // Kirim data ke Laravel pakai AJAX
             $.ajax({
-                url: "contact.php",
+                url: "/contactus", // karena Route::resource('contactus', ...) → POST ke /contactus
                 type: "POST",
                 data: {
-                    name: name,
-                    email: email,
+                    _token: $('meta[name="csrf-token"]').attr('content'), // penting untuk Laravel
+                    first_name: first_name,
+                    last_name: last_name,
                     subject: subject,
-                    message: message
+                    description: description
                 },
                 cache: false,
-                success: function () {
+                success: function (response) {
+                    // Pesan sukses
                     $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
                     $('#success > .alert-success')
-                            .append("<strong>Your message has been sent. </strong>");
-                    $('#success > .alert-success')
-                            .append('</div>');
+                        .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
+                        .append("<strong>Your message has been sent successfully. </strong>")
+                        .append('</div>');
+
+                    // Reset form
                     $('#contactForm').trigger("reset");
                 },
-                error: function () {
+                error: function (xhr) {
+                    // Pesan error
                     $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
-                    $('#success > .alert-danger').append('</div>');
+                    $('#success > .alert-danger')
+                        .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
+                        .append($("<strong>").text("Sorry " + first_name + ", it seems that our server is not responding. Please try again later!"))
+                        .append('</div>');
+
+                    // Reset form
                     $('#contactForm').trigger("reset");
+
+                    console.error('Error:', xhr.responseText);
                 },
                 complete: function () {
+                    // Re-enable button setelah 1 detik
                     setTimeout(function () {
                         $this.prop("disabled", false);
                     }, 1000);
@@ -54,12 +66,14 @@ $(function () {
         },
     });
 
+    // Support tab Bootstrap
     $("a[data-toggle=\"tab\"]").click(function (e) {
         e.preventDefault();
         $(this).tab("show");
     });
 });
 
-$('#name').focus(function () {
+// Hapus alert saat user mulai mengetik
+$('#first_name').focus(function () {
     $('#success').html('');
 });
