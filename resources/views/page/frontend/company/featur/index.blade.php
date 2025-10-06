@@ -30,16 +30,16 @@
                             <div class="feature-img">
                                 <div class="row">
                                     <div class="col-6">
-                                        <img src="img/feature-1.jpg" alt="Image">
+                                        <img src="{{ asset('assetfrontend/img/feature-1.jpg') }}" alt="Image">
                                     </div>
                                     <div class="col-6">
-                                        <img src="img/feature-2.jpg" alt="Image">
+                                        <img src="{{ asset('assetfrontend/img/feature-2.jpg') }}" alt="Image">
                                     </div>
                                     <div class="col-6">
-                                        <img src="img/feature-3.jpg" alt="Image">
+                                        <img src="{{ asset('assetfrontend/img/feature-3.jpg') }}" alt="Image">
                                     </div>
                                     <div class="col-6">
-                                        <img src="img/feature-4.jpg" alt="Image">
+                                        <img src="{{ asset('assetfrontend/img/feature-4.jpg') }}" alt="Image">
                                     </div>
                                 </div>
                             </div>

@@ -28,7 +28,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-1.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -45,7 +45,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-2.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -62,7 +62,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-3.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -79,7 +79,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-4.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -96,7 +96,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-1.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -113,7 +113,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-2.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -130,7 +130,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-3.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -147,7 +147,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Image">
+                                <img src="{{ asset('assetfrontend/img/team-4.jpg') }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>

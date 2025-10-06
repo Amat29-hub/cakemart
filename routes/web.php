@@ -21,6 +21,10 @@ use App\Http\Controllers\Backend\TenagaKerjaController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Frontend\MartLandingFrontendController;
 use App\Http\Controllers\Frontend\Company\AboutFrontendController;
+use App\Http\Controllers\Frontend\Company\FeaturFrontendController;
+use App\Http\Controllers\Frontend\Company\GalleryFrontendController;
+use App\Http\Controllers\Frontend\Company\MenuFrontendController;
+use App\Http\Controllers\Frontend\Company\TeamFrontendController;
 use App\Http\Controllers\Frontend\CompanyLandingFrontendController;
 
 
@@ -34,8 +38,16 @@ Route::get('/', [CompanyLandingFrontendController::class, 'index'])->name('home'
 // Company
 Route::get('/about', [AboutFrontendController::class, 'index'])->name('about');
 
-// Mart
-Route::get('/mart', [MartLandingFrontendController::class, 'index'])->name('mart');
+
+//Company
+Route::get('/', [CompanyLandingFrontendController::class, 'index']);
+Route::get('/about', [AboutFrontendController::class, 'index']);
+Route::get('/menu', [MenuFrontendController::class, 'index']);
+Route::get('/team', [TeamFrontendController::class, 'index']);
+Route::get('/featur', [FeaturFrontendController::class, 'index']);
+Route::get('/gallery', [GalleryFrontendController::class, 'index']);
+//Mart
+Route::get('/mart', [MartLandingFrontendController::class, 'index']);
 
 // Payment
 Route::get('/payment', function () {
