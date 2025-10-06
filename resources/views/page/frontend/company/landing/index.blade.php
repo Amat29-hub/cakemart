@@ -4,160 +4,33 @@
         <div class="carousel">
             <div class="container-fluid">
                 <div class="owl-carousel">
+                    @if ( $activeHeros )
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="{{ asset('assetfrontend/img/carousel-1.jpg') }}" alt="Image">
+                            <img src="{{ asset('storage/' . $activeHeros->photo) }}" alt="Image">
                         </div>
                         <div class="carousel-text">
-                            <h1>Best <span>Quality</span> Ingredients</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
-                            </p>
+                            <h1>{{ $activeHeros->title }}</h1>
                             <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">View Menu</a>
-                                <a class="btn custom-btn" href="">Book Table</a>
+                                <a class="btn custom-btn" href="/mart">View Mart</a>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="{{ asset('assetfrontend/img/carousel-2.jpg') }}" alt="Image">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>World’s <span>Best</span> Chef</h1>
-                            <p>
-                                Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
-                            </p>
-                            <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">View Menu</a>
-                                <a class="btn custom-btn" href="">Book Table</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="{{ asset('assetfrontend/img/carousel-3.jpg') }}" alt="Image">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>Fastest Order <span>Delivery</span></h1>
-                            <p>
-                                Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
-                            </p>
-                            <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">View Menu</a>
-                                <a class="btn custom-btn" href="">Book Table</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endif
                 </div>
             </div>
         </div>
         <!-- Carousel End -->
 
 
-        <!-- Booking Start -->
-        <div class="booking">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="booking-content">
-                            <div class="section-header">
-                                <p>Book A Table</p>
-                                <h2>Book Your Table For Private Dinners & Happy Hours</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="booking-form">
-                            <form>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Name" required="required" />
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="far fa-user"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" placeholder="Email" required="required" />
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="far fa-envelope"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Mobile" required="required" />
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
-                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
-                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <select class="custom-select form-control">
-                                            <option selected>Guest</option>
-                                            <option value="1">1 Guest</option>
-                                            <option value="2">2 Guest</option>
-                                            <option value="3">3 Guest</option>
-                                            <option value="4">4 Guest</option>
-                                            <option value="5">5 Guest</option>
-                                            <option value="6">6 Guest</option>
-                                            <option value="7">7 Guest</option>
-                                            <option value="8">8 Guest</option>
-                                            <option value="9">9 Guest</option>
-                                            <option value="10">10 Guest</option>
-                                        </select>
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <button class="btn custom-btn" type="submit">Book Now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Booking End -->
-
-
         <!-- About Start -->
         <div class="about">
             <div class="container">
+                @if ( $activeAbout )
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="{{ asset('assetfrontend/img/about.jpg') }}" alt="Image">
-                            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <img src="{{ asset('storage/' . $activeAbout->photo) }}" alt="Image">
                                 <span></span>
                             </button>
                         </div>
@@ -170,42 +43,21 @@
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    {{ $activeAbout->description }}
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
-                                <a class="btn custom-btn" href="">Book A Table</a>
+                                <a class="btn custom-btn" href="/mart">Order Cake</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endif
             </div>
         </div>
         <!-- About End -->
 
 
-        <!-- Video Modal Start-->
-        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- 16:9 aspect ratio -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Video Modal End -->
-
-
-        <!-- Feature Start -->
-        <div class="feature">
+        <!-- sejarah Start -->
+        <!---div class="feature">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
@@ -304,47 +156,28 @@
         <!-- Feature End -->
 
 
-        <!-- Food Start -->
+        <!-- servis Start -->
         <div class="food">
             <div class="container">
                 <div class="row align-items-center">
+                    @foreach ( $activeService as $service )
                     <div class="col-md-4">
                         <div class="food-item">
-                            <i class="flaticon-burger"></i>
-                            <h2>Burgers</h2>
+                            <img src="{{ asset('storage/' . $service->photo) }}" alt="Image">
+                            <h2>{{ $service->title }}</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem.
+                                {{ $service->description }}
                             </p>
-                            <a href="">View Menu</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <i class="flaticon-snack"></i>
-                            <h2>Snacks</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem.
-                            </p>
-                            <a href="">View Menu</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <i class="flaticon-cocktail"></i>
-                            <h2>Beverages</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem.
-                            </p>
-                            <a href="">View Menu</a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
         <!-- Food End -->
 
 
-        <!-- Menu Start -->
+        <!-- product Start -->
         <div class="menu">
             <div class="container">
                 <div class="section-header text-center">
@@ -521,7 +354,7 @@
                 </div>
             </div>
         </div>
-        <!-- Menu End -->
+        <!-- product End -->
 
 
         <!-- Team Start -->
@@ -532,10 +365,11 @@
                     <h2>Our Master Chef</h2>
                 </div>
                 <div class="row">
+                    @foreach ( $activeTeam as $team )
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="{{ asset('assetfrontend/img/team-1.jpg') }}" alt="Image">
+                                <img src="{{ asset('storage/' . $team->photo) }}" alt="Image">
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -544,62 +378,13 @@
                                 </div>
                             </div>
                             <div class="team-text">
-                                <h2>Adam Phillips</h2>
-                                <p>CEO, Co Founder</p>
+                                <h2>{{ $team->name }}</h2>
+                                <h3>{{ $team->position }}</h3>
+                                <p>{{ $team->description }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="{{ asset('assetfrontend/img/team-2.jpg') }}" alt="Image">
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Dylan Adams</h2>
-                                <p>Master Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="{{ asset('assetfrontend/img/team-3.jpg') }}" alt="Image">
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Jhon Doe</h2>
-                                <p>Master Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="{{ asset('assetfrontend/img/team-4.jpg') }}" alt="Image">
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Josh Dunn</h2>
-                                <p>Master Chef</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -610,46 +395,18 @@
         <div class="testimonial">
             <div class="container">
                 <div class="owl-carousel testimonials-carousel">
+                    @foreach ( $activeTestimoni as $testimoni)
                     <div class="testimonial-item">
                         <div class="testimonial-img">
-                            <img src="{{ asset('assetfrontend/img/testimonial-1.jpg') }}" alt="Image">
+                            <img src="{{ asset('storage/' . $testimoni->photo_profile) }}" alt="Image">
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
+                            {{ $testimoni->description }}
                         </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
+                        <h2>{{ $testimoni->name }}</h2>
+                        <h3>{{ $testimoni->rating }}</h3>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="{{ asset('assetfrontend/img/testimonial-2.jpg') }}" alt="Image">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
-                        </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="{{ asset('assetfrontend/img/testimonial-3.jpg') }}" alt="Image">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
-                        </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="{{ asset('assetfrontend/img/testimonial-4.jpg') }}" alt="Image">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
-                        </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -717,25 +474,23 @@
                 </div>
                 <div class="row contact-form">
                     <div class="col-md-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1600663868074!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                    <div class="col-md-6">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form  action="{{ route('contactus.store') }}" method="POST" enctype="multipart/form-data" id="contactForm" novalidate="novalidate">
+                            @csrf
                             <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" required="required" data-validation-required-message="Please enter your first name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" required="required" data-validation-required-message="Please enter your last name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control" id="description" name="description" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -748,61 +503,4 @@
         </div>
         <!-- Contact End -->
 
-
-        <!-- Blog Start -->
-        <div class="blog">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Food Blog</p>
-                    <h2>Latest From Food Blog</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="{{ asset('assetfrontend/img/blog-1.jpg') }}" alt="Blog">
-                            </div>
-                            <div class="blog-content">
-                                <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Food</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
-                                <div class="blog-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte
-                                    </p>
-                                    <a class="btn custom-btn" href="">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="{{ asset('assetfrontend/img/blog-2.jpg') }}" alt="Blog">
-                            </div>
-                            <div class="blog-content">
-                                <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Food</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
-                                <div class="blog-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte
-                                    </p>
-                                    <a class="btn custom-btn" href="">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
 @endsection

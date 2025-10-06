@@ -18,6 +18,30 @@ class ContactUsController extends Controller
     }
 
     /**
+     * Simpan data contact form dari user
+     */
+    public function store(Request $request)
+{
+    $request->validate([
+        'first_name' => 'required|string|max:255',
+        'last_name' => 'required|string|max:255',
+        'subject' => 'required|string|max:255',
+        'description' => 'required|string',
+    ]);
+
+    ContactUs::create([
+        'first_name' => $request->first_name,
+        'last_name' => $request->last_name,
+        'subject' => $request->subject,
+        'description' => $request->description,
+        'is_seen' => 0,
+    ]);
+
+    return redirect()->route('contactus.index')->with('success', 'Pesan berhasil dikirim.');
+}
+
+
+    /**
      * Tampilkan detail pesan contact us
      */
     public function show($id)
