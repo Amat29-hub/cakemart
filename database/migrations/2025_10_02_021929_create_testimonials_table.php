@@ -14,12 +14,11 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('rating')->default(0);
-            $table->string('mediasocial')->nullable();
             $table->boolean('is_active')->default(1);
             $table->timestamps();
         });
     }
-    
+
     public function down(): void
     {
         Schema::dropIfExists('testimonials');
