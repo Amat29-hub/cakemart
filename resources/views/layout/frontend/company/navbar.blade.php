@@ -8,20 +8,20 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="feature.html" class="nav-item nav-link">Feature</a>
-                        <a href="team.html" class="nav-item nav-link">Chef</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/about" class="nav-item nav-link">About</a>
+                        <a href="/service" class="nav-item nav-link">Service</a>
+                        <a href="/team" class="nav-item nav-link">Chef</a>
+                        <a href="/menu" class="nav-item nav-link">Menu</a>
+                        <a href="/mart" class="nav-item nav-link">Sale</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="/featur" class="dropdown-item">Feature</a>
+                                <a href="single.html" class="dropdown-item">History</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </div>
