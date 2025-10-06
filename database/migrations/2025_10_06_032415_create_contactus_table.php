@@ -11,14 +11,14 @@ return new class extends Migration
         Schema::create('contactus', function (Blueprint $table) {
             $table->id();
             $table->string('first_name');
-            $table->string('last_name')->nullable();
-            $table->string('subject')->nullable();
-            $table->text('description')->nullable();
-            $table->boolean('is_active')->default(1);
+            $table->string('last_name');
+            $table->string('subject');
+            $table->text('description');
+            $table->boolean('is_seen')->default(false); // status sudah dilihat / belum
             $table->timestamps();
         });
     }
-    
+
     public function down(): void
     {
         Schema::dropIfExists('contactus');

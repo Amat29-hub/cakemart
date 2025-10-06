@@ -17,17 +17,39 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;                /* sidebar full tinggi layar */
+    height: 100vh; /* full tinggi layar */
     overflow-y: auto;
     z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 .main-panel {
-    margin-left: 250px;           /* kasih jarak sebesar sidebar */
-    padding:0px;
+    margin-left: 262px;  /* samakan dengan lebar sidebar */
+    transition: all 0.3s ease;
     min-height: 100vh;
+    padding: 0;
 }
 
+/* Sidebar collapsed (desktop) */
+.sidebar.collapsed {
+    width: 70px;
+}
+.main-panel.expanded {
+    margin-left: 70px;
+}
+
+/* Sidebar slide in/out (mobile) */
+@media (max-width: 991px) {
+    .sidebar {
+        left: -262px;
+    }
+    .sidebar.show {
+        left: 0;
+    }
+    .main-panel {
+        margin-left: 0;
+    }
+}
 </style>
     <link rel="shortcut icon" href="{{ asset('assetsbackend/images/favicon.png') }}" />
   </head>

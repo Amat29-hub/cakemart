@@ -8,74 +8,91 @@
     </a>
   </div>
   <ul class="nav">
-    <li class="nav-item {{ Request::is('adminpanel/dashboard') ? 'active' : '' }}">
+    {{-- Dashboard --}}
+    <li class="nav-item {{ Request::is('adminpanel/dashboard*') ? 'active' : '' }}">
       <a class="nav-link" href="{{ url('adminpanel/dashboard') }}">
-        <i class="mdi mdi-home menu-icon"></i>
+        <i class="mdi mdi-view-dashboard menu-icon"></i>
         <span class="menu-title">Dashboard</span>
       </a>
     </li>
 
-    <li class="nav-item {{ Request::is('adminpanel/hero') ? 'active' : '' }}">
+    {{-- Hero --}}
+    <li class="nav-item {{ Request::is('adminpanel/hero*') ? 'active' : '' }}">
       <a class="nav-link" href="{{ url('adminpanel/hero') }}">
-        <i class="mdi mdi-contacts menu-icon"></i>
+        <i class="mdi mdi-image-size-select-large menu-icon"></i>
         <span class="menu-title">Hero</span>
       </a>
     </li>
 
-    <li class="nav-item {{ Request::is('adminpanel/forms*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/forms') }}">
-        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-        <span class="menu-title">Forms</span>
+    {{-- About Us --}}
+    <li class="nav-item {{ Request::is('adminpanel/aboutus*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/aboutus') }}">
+        <i class="mdi mdi-information-outline menu-icon"></i>
+        <span class="menu-title">About Us</span>
       </a>
     </li>
 
-    <li class="nav-item {{ Request::is('adminpanel/charts*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/charts') }}">
-        <i class="mdi mdi-chart-bar menu-icon"></i>
-        <span class="menu-title">Charts</span>
+    {{-- Services --}}
+    <li class="nav-item {{ Request::is('adminpanel/services*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/services') }}">
+        <i class="mdi mdi-cogs menu-icon"></i>
+        <span class="menu-title">Services</span>
       </a>
     </li>
 
-    <li class="nav-item {{ Request::is('adminpanel/tables*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/tables') }}">
-        <i class="mdi mdi-table-large menu-icon"></i>
-        <span class="menu-title">Tables</span>
+    {{-- Gallery --}}
+    <li class="nav-item {{ Request::is('adminpanel/gallery*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/gallery') }}">
+        <i class="mdi mdi-image-album menu-icon"></i>
+        <span class="menu-title">Gallery</span>
       </a>
     </li>
-    <li class="nav-item {{ Request::is('adminpanel/tables*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/tables') }}">
-        <i class="mdi mdi-table-large menu-icon"></i>
-        <span class="menu-title">Tables</span>
+
+    {{-- Testimonials --}}
+    <li class="nav-item {{ Request::is('adminpanel/testimonial*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/testimonial') }}">
+        <i class="mdi mdi-comment-account menu-icon"></i>
+        <span class="menu-title">Testimonials</span>
       </a>
     </li>
-    <li class="nav-item {{ Request::is('adminpanel/tables*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/tables') }}">
-        <i class="mdi mdi-table-large menu-icon"></i>
-        <span class="menu-title">Tables</span>
+
+    {{-- Sejarah --}}
+    <li class="nav-item {{ Request::is('adminpanel/sejarah*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/sejarah') }}">
+        <i class="mdi mdi-history menu-icon"></i>
+        <span class="menu-title">Sejarah</span>
       </a>
     </li>
-    <li class="nav-item {{ Request::is('adminpanel/tables*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/tables') }}">
-        <i class="mdi mdi-table-large menu-icon"></i>
-        <span class="menu-title">Tables</span>
+
+    {{-- Tenaga Kerja --}}
+    <li class="nav-item {{ Request::is('adminpanel/tenagakerja*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/tenagakerja') }}">
+        <i class="mdi mdi-account-group menu-icon"></i>
+        <span class="menu-title">Tenaga Kerja</span>
       </a>
     </li>
-    <li class="nav-item {{ Request::is('adminpanel/tables*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/tables') }}">
-        <i class="mdi mdi-table-large menu-icon"></i>
-        <span class="menu-title">Tables</span>
+
+    {{-- Partners --}}
+    <li class="nav-item {{ Request::is('adminpanel/partners*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/partners') }}">
+        <i class="mdi mdi-domain menu-icon"></i>
+        <span class="menu-title">Partners</span>
       </a>
     </li>
-    <li class="nav-item {{ Request::is('adminpanel/tables*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/tables') }}">
-        <i class="mdi mdi-table-large menu-icon"></i>
-        <span class="menu-title">Tables</span>
+
+    {{-- Contact Us --}}
+    <li class="nav-item {{ Request::is('adminpanel/contactus*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/contactus') }}">
+        <i class="mdi mdi-phone menu-icon"></i>
+        <span class="menu-title">Contact Us</span>
       </a>
     </li>
-    <li class="nav-item {{ Request::is('adminpanel/tables*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{ url('adminpanel/tables') }}">
-        <i class="mdi mdi-table-large menu-icon"></i>
-        <span class="menu-title">Tables</span>
+
+    {{-- Media Social --}}
+    <li class="nav-item {{ Request::is('adminpanel/mediasocial*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ url('adminpanel/mediasocial') }}">
+        <i class="mdi mdi-instagram menu-icon"></i>
+        <span class="menu-title">Media Social</span>
       </a>
     </li>
   </ul>
